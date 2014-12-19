@@ -12,18 +12,21 @@ for (var i=0; i < amount; i++){
 };
 
 //checking of correct loggining
-var userName = prompt("Enter your login, please.");
+var userName = prompt('Enter your login, please. ');
 
+var isUser = false;
 for (var i=0; i<users.length; i++){
 
 	if (userName == users[i]){
-		alert('Logining succesfull.')
-		break;
-	} else {
-		alert("Login is not correct," + " " + userName + ".");
-		break;
-	};
+		isUser = true;
+	} 
+};
 
+//
+if (isUser){
+	alert('Logining succesfull.')
+} else {
+	alert('Login is not correct, ' + userName)
 };
 
 
