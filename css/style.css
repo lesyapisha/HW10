@@ -1,0 +1,6 @@
+body{
+	background-image: url(../img/ny.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 0 -120px;
+}
